@@ -17,37 +17,50 @@ body{
        <?php include 'menu.php'; ?>
 
         <!--Carousel starts-->
-        <div id="demo" class="carousel slide" data-ride="carousel">
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-   
-  </ul>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-      <img src="img/co.jpg" alt="img" width="1100" height="500">
-      <div class="carousel-caption">
-     
-       <h1 class=" bg-dark">Read amazing stories, poems and many more.</h1>
-      </div>   
-    </div>
-    <div class="carousel-item">
-      <img src="img/landscape.jpg" alt="New York" width="1100" height="500">
-      <div class="carousel-caption">
-        <h1 class="bg-dark">Send us what you have written. Let the world read it aloud.</h1>
-      </div>   
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
+        <div class="blog-card">
+      <input type="radio" name="select" id="tap-1" checked>
+      <input type="radio" name="select" id="tap-2">
+      <input type="radio" name="select" id="tap-3">
+      <input type="checkbox" id="imgTap">
+      <div class="sliders">
+        <label for="tap-1" class="tap tap-1"></label>
+        <label for="tap-2" class="tap tap-2"></label>
+        <label for="tap-3" class="tap tap-3"></label>
+      </div>
+<div class="inner-part">
+        <label for="imgTap" class="img">
+          <img class="img-1" src="img/nepal.jpg">
+        </label>
+        <div class="content content-1">
+          <span>26 February 2021</span>
+          <div class="title text-white">
+Quote of the date_modify</div>
+<div class="text text-white">
+The best leaders are those most interested in surrounding themselves with assistants and associates smarter than they are. 
+They are frank in admitting this and are willing to pay for such talents.</div>
+<button type="read"> <a href="stories.php">Read more </a></button>
+        </div>
 </div>
+<div class="inner-part">
+        <label for="imgTap" class="img">
+          <img class="img-2" src="#">
+        </label>
+        <div class="content content-2">
+          <span>26 December 2018</span>
+          <div class="title">
+Lorem Ipsum Dolor</div>
+<div class="text">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum eos ut consectetur numquam ullam fuga animi laudantium nobis rem molestias.</div>
+<button type="read"> <a href="stories.php">Read more </a></button>
+        </div>
+</div>
+
+</div>
+
+
   <!--Carousel ends-->
 
-    <!--About starts-->
+    <!--About starts--> 
 <section class="my-5">
   <div class="py-5">
     <h2 class="text-center"></h2>
@@ -144,7 +157,7 @@ body{
  <!--Contact ends-->
 
   <!--Footer starts-->
-<footer><p class="p-3 bg-dark text-white text-center">©prashantsubedi</p></footer>
+<footer><p class="p-3 bg-dark text-white text-center">©prashantsubedi <?php echo date('Y'); ?></p></footer>
    <!--Footer ends-->
     <!--Script Starts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
